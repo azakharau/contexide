@@ -1,0 +1,17 @@
+[package]
+name = "contexide-vector-qdrant"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+contexide-core = { path = "../contexide-core" }
+contexide-config = { path = "../contexide-config" }
+
+anyhow = { workspace = true }
+async-trait = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+qdrant-client = { workspace = true }

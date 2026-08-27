@@ -1,0 +1,14 @@
+[package]
+name = "contexide-workflow-core"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+contexide-core = { path = "../contexide-core" }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+uuid = { workspace = true, features = ["v7"] }
+strum = { workspace = true }

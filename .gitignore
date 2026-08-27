@@ -1,0 +1,7 @@
+/target
+.idea/
+.DS_Store
+.codex/
+.agents/
+.opencode/
+.claude/

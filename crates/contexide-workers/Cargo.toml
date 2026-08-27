@@ -1,0 +1,41 @@
+[package]
+name = "contexide-workers"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+tokio = { workspace = true, features = ["rt-multi-thread", "macros", "signal", "time"] }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true, features = ["env-filter", "fmt"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+async-trait = { workspace = true }
+
+contexide-config = { path = "../contexide-config" }
+contexide-messaging-nats = { path = "../contexide-messaging-nats" }
+contexide-worker-runtime = { path = "../contexide-worker-runtime" }
+contexide-core = { path = "../contexide-core" }
+
+[[bin]]
+name = "contexide-worker-extract"
+path = "src/bin/extract.rs"
+
+[[bin]]
+name = "contexide-worker-normalize"
+path = "src/bin/normalize.rs"
+
+[[bin]]
+name = "contexide-worker-chunk"
+path = "src/bin/chunk.rs"
+
+[[bin]]
+name = "contexide-worker-embed"
+path = "src/bin/embed.rs"
+
+[[bin]]
+name = "contexide-worker-index"
+path = "src/bin/index.rs"

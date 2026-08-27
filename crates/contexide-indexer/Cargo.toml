@@ -1,0 +1,15 @@
+[package]
+name = "contexide-indexer"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+contexide-core = { version = "0.1.0", path = "../contexide-core" }
+contexide-embeddings = { version = "0.1.0", path = "../contexide-embeddings" }
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
+async-trait.workspace = true

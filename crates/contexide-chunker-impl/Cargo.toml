@@ -1,0 +1,12 @@
+[package]
+name = "contexide-chunker-impl"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+contexide-core = { version = "0.1.0", path = "../contexide-core" }
+ahash = { workspace = true, features = ["serde"] }
+anyhow.workspace = true
+tokenizers.workspace = true
